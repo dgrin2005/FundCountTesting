@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FundCountTesting</title>
+</head>
+<body>
+    <p>
+        <label>
+            Date
+        </label>
+        <input id="date" type="date">
+    </p>
+    <p>
+        <label>
+            Amount
+        </label>
+        <input id="amount" type="text">
+        <label id="CurrentCurrency"></label>
+    </p>
+    <button onclick="recalculate()">
+        Recalculate
+    </button>
+    <p>
+        <label id="profitLabel">
+            Profit
+        </label>
+        <input id="profit" type="text" value="0" readonly/>
+        <label id="BaseCurrency"></label>
+    </p>
+    <p>
+        <label id="error" style="color: red">
+        </label>
+    </p>
+    <script src="JS/display.js"></script>
+    <script src="JS/currency.js"></script>
+    <script src="JS/utility.js"></script>
+    <script src="JS/request.js"></script>
+    <script src="JS/recalculate.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
